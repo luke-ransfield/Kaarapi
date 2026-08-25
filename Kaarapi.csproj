@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	
+  <PropertyGroup>
+    <!-- Select the framework(s) you wish to target.
+        Rhino 6: net45
+        Rhino 7: net48
+        Rhino 8 Windows: net48, net7.0, net7.0-windows, net7.0-windows10.0.22000.0, etc
+        Rhino 8 Mac: net7.0, net7.0-macos, net7.0-macos12.0, etc
+    -->
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <TargetExt>.rhp</TargetExt>
+    <NoWarn>NU1701</NoWarn>
+    <TargetFramework>net8.0</TargetFramework>
+    <Authors>Luke Ransfield</Authors>
+    <Copyright>Copyright (c) 2026 Luke</Copyright>
+    <PackageProjectUrl>https://github.com/luke-ransfield/Kaarapi</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/luke-ransfield/Kaarapi?tab=MIT-1-ov-file</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/luke-ransfield/Kaarapi</RepositoryUrl>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <!-- Specifies information for Assembly and Yak -->
+    <Version>1.0</Version>
+    <Title>Kaarapi</Title>
+    <Company>Matihiko Group</Company>
+    <Description>Little Automated Fence Plugin for Rhino3D</Description>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="RhinoCommon" Version="8.0.23304.9001" ExcludeAssets="runtime" />
+  </ItemGroup>
+  
+</Project>
